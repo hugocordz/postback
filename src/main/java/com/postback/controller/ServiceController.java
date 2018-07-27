@@ -12,5 +12,6 @@ public class ServiceController {
     @RequestMapping(value = "/postback", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void endpointExample(@RequestBody String payload) {
         System.out.println(payload);
+        System.out.println("exit");
     }
 }
